@@ -4,7 +4,7 @@
 
 :root{
     --container-width: 1352px;
-    --colr-primary: #08A6E4;
+    --color-primary: #08A6E4;
     --color-primary-shadow: rgba(7, 172, 230, .16);
     --color-redish: #FB3B64;
     --color-green: #55DFB4;
@@ -17,15 +17,18 @@
 }
 
 /**REPETITIVE ELEMENTS  - IN WHOLE WEBSITE**/
+
 .whole-back{
     display: block;
-    background-color: #FFFFFF;
-    height: 100%;
-    width: 100vw;
+    /*background-color: var(--color-white);  czy dodać?????? czy zakryje inne????????*/
+    width: 100%;
+
 }
 
+
 .container{
-    width: var(--container-width);
+    width: var(--container-width); /*width zmieniono w posczególnych sekcjach na 100%, ponieważ w przeglądarce u mnie był pasek
+    - działo się też tak przy innych projektach*/
 }
 
 /** HEADER - MAIN MENU BAR WITH LOGO**/
@@ -34,20 +37,21 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    background: #FFFFFF 0% 0% no-repeat padding-box;
+    background: var(--color-white) 0% 0% no-repeat padding-box;
     box-shadow: 0px 3px 6px #00000029;
 }
+
 .header__blanket{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
 }
+
 .logo{
     text-align: left;
     font: normal normal 300 32px/37px var(--font-main-raleway);
-    color: #08A6E4;
-
+    color: var(--color-primary);
 }
 
 .menu{
@@ -56,7 +60,7 @@
 
     font: normal normal bold 11px/15px var(--font-main-opensans);
     letter-spacing: 3.28px;
-    color: #A5A5A5;
+    color: var(--color-grey);
     text-transform: uppercase;
     width: 50%;
     height: 100%;
@@ -69,8 +73,143 @@
 }
 
 .menu__items:hover{
-    color: #000000;
-    border-bottom: 4px solid #08A6E4;
+    color: var(--color-black);
+    border-bottom: 4px solid var(--color-primary);
     text-decoration: none;
 }
 
+/**MAIN PAGE - SELL MORE - FIRST BOX **/
+
+.main-back{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 130px
+}
+
+.main-page{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    width: 100%;
+}
+
+
+.heading1{
+    font: normal normal normal 49px/57px var(--font-main-raleway);
+    color: var(--color-black);
+}
+
+.description__main-page{
+    font: normal normal normal 16px/22px var(--font-main-opensans);
+    letter-spacing: 0px;
+    color: var(--color-black);
+    margin: 20px 0 38px 0;
+}
+
+.button__cta{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-primary) 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 14px var(--color-primary-shadow);
+    border-radius: 40px;
+    width: 440px;
+    height: 67px;
+    text-decoration: none;
+    font: normal normal bold 16px/22px var(--font-main-opensans);
+    color: var(--color-white)
+}
+
+.background__main-page{
+    position: relative;
+    width: 100%;
+}
+
+
+ /* MAIN PAGE - STATISTICS - SECOND BOX */
+
+.statistics{
+    width: 100%;
+}
+
+
+.statistics__contents{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 122px;
+}
+
+
+.heading2{
+    text-align: center;
+    font: normal normal normal 36px/42px var(--font-main-raleway);
+    letter-spacing: 0px;
+    color: var(--color-black);
+    margin: 100px 0 100px 0;
+}
+
+.statistics__contents div{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 7%;
+    margin-right: 7%;
+}
+.statistics__icons{
+    display: flex;
+    position: relative;
+    left: 40%;
+}
+
+.statistics__icons-box{
+    background-color: red;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+}
+
+.statistics__contents div:nth-child(1) > div:first-child{
+    background-color: #FB3B64;
+}
+
+.statistics__contents div:nth-child(2) > div:first-child{
+    background-color: #08A6E4;
+}
+
+.statistics__contents div:nth-child(3) > div:first-child{
+    background-color: #55DFB4;
+}
+/*???????NIE MOGĘ ZORBIĆ KROPEK KOLOROWYCH ZA IKONAMI*??????????*/
+
+/*.statistics__icons::before{*/
+/*    content: " ";*/
+/*    position: absolute;*/
+/*    background: red;*/
+/*    width: 50px;*/
+/*    height: 62px;*/
+/*}*/
+
+
+.statistics__numbers{
+    text-align: center;
+    font: normal normal 800 20px/24px Raleway;
+    letter-spacing: 5.96px;
+    color: #000000;
+    margin: 14px 0 19px 0;
+}
+
+.statistics__nr-description{
+    text-align: center;
+    font: normal normal normal 17px/20px Raleway;
+    letter-spacing: 0;
+    color: #A5A5A5;
+}
+
+/* MAIN PAGE - BENEFITS - THIRED BOX-->*/
