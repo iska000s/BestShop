@@ -1,7 +1,5 @@
 *{
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
 }
 
 :root{
@@ -15,6 +13,64 @@
     --color-light-grey: #F7F7F7;
     --color-white: #FFFFFF;
     --font-main-raleway: "Raleway";
-    --font-main-opensans: "Open Sans"";
+    --font-main-opensans: "Open Sans";
+}
+
+/**REPETITIVE ELEMENTS  - IN WHOLE WEBSITE**/
+.whole-back{
+    display: block;
+    background-color: #FFFFFF;
+    height: 100%;
+    width: 100vw;
+}
+
+.container{
+    width: var(--container-width);
+}
+
+/** HEADER - MAIN MENU BAR WITH LOGO**/
+
+.header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 0px 3px 6px #00000029;
+}
+.header__blanket{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+}
+.logo{
+    text-align: left;
+    font: normal normal 300 32px/37px var(--font-main-raleway);
+    color: #08A6E4;
+
+}
+
+.menu{
+    display: flex;
+    justify-content: space-between;
+
+    font: normal normal bold 11px/15px var(--font-main-opensans);
+    letter-spacing: 3.28px;
+    color: #A5A5A5;
+    text-transform: uppercase;
+    width: 50%;
+    height: 100%;
+}
+
+.menu__items{
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+
+.menu__items:hover{
+    color: #000000;
+    border-bottom: 4px solid #08A6E4;
+    text-decoration: none;
 }
 
