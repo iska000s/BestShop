@@ -20,13 +20,13 @@
 
 .whole-back{
     display: block;
-    /*background-color: var(--color-white);  czy dodać?????? czy zakryje inne????????*/
+    background-color: var(--color-white);
     width: 100%;
 }
 
 
 .container{
-    width: var(--container-width); /*width zmieniono w posczególnych sekcjach na 100%, ponieważ w przeglądarce u mnie był pasek
+    width: var(--container-width); /*width zmieniono w posczególnych sekcjach na 100%, ponieważ w przeglądarce był pasek
     - działo się też tak przy innych projektach*/
 }
 
@@ -191,7 +191,10 @@
 .statistics__contents div:nth-child(3) > div:first-child{
     background-color: #55DFB4;
 }
-/*???????NIE MOGĘ ZORBIĆ KROPEK KOLOROWYCH ZA IKONAMI*??????????*/
+
+/*???????NIE MOGĘ ZORBIĆ KROPEK KOLOROWYCH ZA IKONAMI
+czy można ten element wykonać beforem i afterem?
+ostatecznie wykonana oddzielnym divem*??????????*/
 
 /*.statistics__icons::before{*/
 /*    content: " ";*/
@@ -235,7 +238,6 @@
     align-items: center;
 }
 
-
 .benefits__box{
     display: flex;
     align-items: center;
@@ -245,8 +247,6 @@
     border-radius: 5px;
     width: 90%;
 }
-
-
 
 .benefits__box h2{
     margin: 0 0 30px 0;
@@ -382,7 +382,7 @@
 
 }
 
-/*przy zmniejszaniu ekranu pasek before ucieka ???????????????????????????????*/
+/*przy zmniejszaniu ekranu pasek z ::before ucieka. Czy można wykonać to inaczej???????????????????????????????*/
 
 .benefits__third .benefits__text::before{
     content: "";
@@ -414,7 +414,7 @@
 
 
 /* 04 --- PRICING - FOURTH BOX ---*/
-/*przy zmniejszaniu ekranu ucina basic?????????????????????????????*/
+/*przy zmniejszaniu ekranu ucina basic. Czy można wykonać to inaczej?????????????????????????????*/
 
 .pricing{
     display: flex;
