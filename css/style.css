@@ -16,13 +16,12 @@
     --font-main-opensans: "Open Sans";
 }
 
-/**REPETITIVE ELEMENTS  - IN WHOLE WEBSITE**/
+/** --- REPETITIVE ELEMENTS  - IN WHOLE WEBSITE --- **/
 
 .whole-back{
     display: block;
     /*background-color: var(--color-white);  czy dodać?????? czy zakryje inne????????*/
     width: 100%;
-
 }
 
 
@@ -31,7 +30,7 @@
     - działo się też tak przy innych projektach*/
 }
 
-/** HEADER - MAIN MENU BAR WITH LOGO**/
+/** 00 --- HEADER - MAIN MENU BAR WITH LOGO --- **/
 
 .header{
     width: 100%;
@@ -78,7 +77,7 @@
     text-decoration: none;
 }
 
-/**MAIN PAGE - SELL MORE - FIRST BOX **/
+/** 01 --- MAIN PAGE - SELL MORE - FIRST BOX --- **/
 
 .main-back{
     width: 100%;
@@ -106,7 +105,7 @@
 
 .description__main{
     font: normal normal normal 16px/22px var(--font-main-opensans);
-    letter-spacing: 0px;
+    letter-spacing: 0;
     color: var(--color-black);
 }
 
@@ -132,7 +131,7 @@
 }
 
 
- /* MAIN PAGE - STATISTICS - SECOND BOX */
+ /* 02 --- MAIN PAGE - STATISTICS - SECOND BOX --- */
 
 .statistics{
     width: 100%;
@@ -214,7 +213,7 @@
     color: #A5A5A5;
 }
 
-/* MAIN PAGE - BENEFITS - THIRED BOX-->*/
+/* 03 --- MAIN PAGE - BENEFITS - THIRED BOX --- */
 
 .benefits__back{
     padding: 100px 0 100px 0;
@@ -250,7 +249,7 @@
     text-align: left;
 }
 
-/*pierwszy benefit*/
+/* 03 --- first benefit */
 .benefits__first{
     padding-left: 35px;
     padding-right: 71px;
@@ -302,7 +301,7 @@
     z-index: -100;
 }
 
-/*drugi benefit*/
+/* 03 --- second benefit */
 .benefits .benefits__box:nth-child(2){
     margin: 37px 0 37px 0;
 }
@@ -355,7 +354,7 @@
     z-index: -100;
 }
 
-/*trzeci benefit*/
+/* 03 --- third benefit */
 .benefits__third{
     background: none;
     border: none;
@@ -389,7 +388,6 @@
     background: var(--color-green) 0% 0% no-repeat padding-box;
     width: 45%;
     height: 4px;
-
 }
 
 .benefits__third .benefits__img img{
@@ -410,9 +408,9 @@
     margin: 0 0 0 60px;
 }
 
-/*   PRICING - FOURTH BOX*/
-/*przy zmniejszaniu ekranu ucina basic?????????????????????????????*/
 
+/* 04 --- PRICING - FOURTH BOX ---*/
+/*przy zmniejszaniu ekranu ucina basic?????????????????????????????*/
 
 .pricing{
     display: flex;
@@ -479,8 +477,7 @@
     height: 50px;
 }
 
-/*pierwsza ramka z ceną- basic*/
-
+/* 04 --- first frame - basic */
 
 .pricing__first-box .count{
     text-align: left;
@@ -497,7 +494,7 @@
     border-radius: 18px;
 }
 
-/*druga ramka z ceną - proffesional*/
+/* 04 --- second frame - proffesional*/
 
 .pricing__second-box{
     margin: 0 59px 0 59px;
@@ -521,9 +518,7 @@
     height: 500px;
 }
 
-
-/*trzecia ramka z ceną - premium*/
-
+/* 04 --- third frame - premium*/
 
 .pricing__third-box .count{
     text-align: left;
@@ -584,13 +579,12 @@
 }
 
 
-/* checkmarki */
-/*pierwsza ramka z ceną - bacis*/
+/* 04 --- checkmarks */
+/* 04 --- first frame - basic*/
 
 .count__details span{
     position: relative;
 }
-
 
 .pricing__first-box .count__details span:first-child:before,
 .pricing__first-box .count__details span:nth-child(2):before,
@@ -615,8 +609,8 @@
     transform: translateX(-150%) translateY(100%);
 }
 
-/* checkmarki */
-/*druga ramka z ceną - professional*/
+/* 04 --- checkmark */
+/* 04 --- second frame - professional*/
 
 .pricing__second-box .count__details span:nth-child(1):before,
 .pricing__second-box .count__details span:nth-child(2):before,
@@ -641,8 +635,8 @@
     transform: translateX(-150%) translateY(100%);
 }
 
-/* checkmarki */
-/*trzecia ramka z ceną - premium*/
+/* 04 --- checkmark */
+/* 04 --- third frame - premium */
 
 .pricing__third-box .count__details span::before{
     content: "";
@@ -652,4 +646,125 @@
     background-image: url("../img/Checkmark-1.svg");
     background-repeat: no-repeat;
     transform: translateX(-150%) translateY(100%);
+}
+
+/* 05 --- CONTACT - FIFTH BOX --- */
+
+.contact{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 75%;
+    margin: 155px 0 50px 0;
+}
+
+.contact__address-box{
+    width: 50%;
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    padding: 0;
+}
+
+.contact__address-box .heading1{
+    margin: 0;
+}
+
+.contact__address-box .description__main{
+    margin-top: 22px;
+    text-align: left;
+}
+
+.address{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 40px;
+}
+
+.contact__mail,
+.contact__telephone{
+    text-decoration: none;
+    text-align: left;
+    color: var(--color-grey);
+    margin-left: 10px;
+}
+
+.contact__mail{
+    margin-right: 20px;
+}
+
+.contact__form-box{
+    width: 50%;
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+}
+
+.form-box_email input,
+.form-box_name input{
+    display: flex;
+    flex-direction: column;
+    text-decoration: underline;
+    border: 0;
+    border-bottom: 1px solid var(--color-grey);
+    width: 100%;
+    line-height: 42px;
+}
+
+.form-box_name,
+.form-box_email{
+    text-align: left;
+    font: normal normal bold 11px/15px var(--font-main-opensans);
+    letter-spacing: 3.28px;
+    color: #08A6E4;
+}
+
+.form-box_email{
+    margin-top: 42px;
+    margin-bottom: 30px;
+}
+
+.checkbox input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox {
+    cursor: pointer;
+    display: flex;
+    text-align: left;
+    font: normal normal normal 12px/17px Open Sans;
+    letter-spacing: 0px;
+    color: #707070;
+    opacity: 1;
+}
+
+.checkbox span {
+    height: 24px;
+    flex-shrink: 0;
+    flex-basis: 24px;
+    border: 1px solid #95989A;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.checkbox input:checked + span{
+    background-image: url("../img/Checkmark.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+}
+
+.contact__form-box .button__cta{
+    border: 0;
+    width: 50%;
+    height: 57px;
+    align-self: flex-end;
 }
