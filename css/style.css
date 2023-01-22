@@ -326,7 +326,6 @@
     background: var(--color-primary) 0% 0% no-repeat padding-box;
     width: 75%;
     height: 4px;
-    box-shadow: 0px 1px 6px #FF00004D;
     opacity: 1;
 }
 
@@ -380,14 +379,17 @@
 
 }
 
+/*przy zmniejszaniu ekranu pasek before ucieka ???????????????????????????????*/
+
 .benefits__third .benefits__text::before{
     content: "";
     position: absolute;
-    top: 290px;
+    top: 80%;
     flex-direction: row;
     background: var(--color-green) 0% 0% no-repeat padding-box;
-    width: 75%;
+    width: 45%;
     height: 4px;
+
 }
 
 .benefits__third .benefits__img img{
@@ -408,13 +410,246 @@
     margin: 0 0 0 60px;
 }
 
+/*   PRICING - FOURTH BOX*/
+/*przy zmniejszaniu ekranu ucina basic?????????????????????????????*/
 
-/*jak korzystać z flex-shrink i flex-grow????????????????????????*
-poniżej próbowałam, ale mi nie wychodziło*/
-/*.benefits__text{*/
-/*    flex-shrink: 2;*/
-/*}*/
 
-/*.benefits__img{*/
-/*    width*/
-/*}*/
+.pricing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: var(--container-width);
+}
+
+.pricing__boxes{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.pricing__box{
+    display: flex;
+    justify-content: center;
+    height: 460px;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+}
+
+.pricing .heading2{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.heading3{
+    text-align: left;
+    font: normal normal bold 20px/1px var(--font-main-raleway);
+    letter-spacing: 0px;
+    color: #13253B;
+    line-height: 24px;
+    margin-bottom: 14px;
+}
+
+.count__details{
+    text-align: center;
+    font: normal normal normal 14px/41px var(--font-main-opensans);
+    letter-spacing: 0px;
+    color: #000000;
+}
+
+.limited{
+    text-align: left;
+    font: normal normal bold 12px/1px var(--font-main-raleway);
+    letter-spacing: 0px;
+    color: #13253B;
+    line-height: 14px;
+}
+
+.button__begin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #EB476E 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    text-decoration: none;
+    width: 150px;
+    height: 50px;
+}
+
+/*pierwsza ramka z ceną- basic*/
+
+
+.pricing__first-box .count{
+    text-align: left;
+    font: normal normal 300 46px/2px var(--font-main-opensans);
+    letter-spacing: 0px;
+    color: #FB3B64;
+    line-height: 64px;
+    margin-bottom: 5px;
+}
+
+.pricing__first-box{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #FB3B64;
+    border-radius: 18px;
+}
+
+/*druga ramka z ceną - proffesional*/
+
+.pricing__second-box{
+    margin: 0 59px 0 59px;
+}
+
+.pricing__second-box .count{
+    text-align: left;
+    font: normal normal 300 46px/2px var(--font-main-opensans);
+    letter-spacing: 0px;
+    color: #07ACE6;
+    line-height: 70px;
+    margin-bottom: 5px;
+}
+
+.pricing__second-box{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 27px #07ACE629;
+    border: 1px solid #07ACE6;
+    border-radius: 18px;
+    width: 35%;
+    height: 500px;
+}
+
+
+/*trzecia ramka z ceną - premium*/
+
+
+.pricing__third-box .count{
+    text-align: left;
+    font: normal normal 300 46px/2px var(--font-main-opensans);
+    letter-spacing: 0px;
+    color: #55DFB4;
+    line-height: 64px;
+    margin-bottom: 5px;
+}
+
+.pricing__third-box{
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #55DFB4;
+    border-radius: 18px;
+}
+
+.pricing__first-box .button__begin{
+    position: absolute;
+    transform: translateY(450%);
+    background: #EB476E 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    text-align: left;
+    font: normal normal bold 13px/41px var(--font-main-opensans);
+    letter-spacing: 0px;
+    color: var(--color-white);
+}
+
+.pricing__second-box .button__begin{
+    position: absolute;
+    transform: translateY(500%);
+    background: #07ACE6 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 14px #07ACE629;
+    border-radius: 23px;
+    font: normal normal bold 13px/41px var(--font-main-opensans);
+    letter-spacing: 0px;
+    color: var(--color-white);
+}
+
+.pricing__third-box .button__begin{
+    position: absolute;
+    transform: translateY(450%);
+    background: #55DFB4 0% 0% no-repeat padding-box;
+    border-radius: 23px;
+    text-align: left;
+    font: normal normal bold 13px/41px var(--font-main-opensans);
+    letter-spacing: 0px;
+    color: var(--color-white);
+}
+
+.count__details{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font: normal normal normal 14px/41px Open Sans;
+    letter-spacing: 0px;
+    color: #000000;
+    padding-bottom: 26px;
+}
+
+
+/* checkmarki */
+/*pierwsza ramka z ceną - bacis*/
+
+.count__details span{
+    position: relative;
+}
+
+
+.pricing__first-box .count__details span:first-child:before,
+.pricing__first-box .count__details span:nth-child(2):before,
+.pricing__first-box .count__details span:nth-child(3):before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-image: url("../img/Checkmark-1.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-150%) translateY(100%);
+}
+
+.pricing__first-box .count__details span:nth-child(4):before,
+.pricing__first-box .count__details span:nth-child(5):before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-image: url("../img/Close.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-150%) translateY(100%);
+}
+
+/* checkmarki */
+/*druga ramka z ceną - professional*/
+
+.pricing__second-box .count__details span:nth-child(1):before,
+.pricing__second-box .count__details span:nth-child(2):before,
+.pricing__second-box .count__details span:nth-child(3):before,
+.pricing__second-box .count__details span:nth-child(4):before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-image: url("../img/Checkmark-1.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-150%) translateY(100%);
+}
+
+.pricing__second-box .count__details span:nth-child(5):before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-image: url("../img/Close.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-150%) translateY(100%);
+}
+
+/* checkmarki */
+/*trzecia ramka z ceną - premium*/
+
+.pricing__third-box .count__details span::before{
+    content: "";
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-image: url("../img/Checkmark-1.svg");
+    background-repeat: no-repeat;
+    transform: translateX(-150%) translateY(100%);
+}
