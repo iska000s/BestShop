@@ -1,0 +1,71 @@
+
+@import 'Workshop/scss/settings/variables';
+@import 'Workshop/scss/settings/mixins';
+
+.main-back {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 60px;
+  .main-page {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+    justify-content: space-around;
+    @include desktop {
+      width: 100%;
+      margin-top: 50px;
+    }
+    @include mobile {
+      height: 100vh;
+    }
+    @include tablet {
+      height: 100vh;
+    }
+    .heading1 {
+      font: normal normal normal 49px/57px $font-main-raleway;
+      color: $color-black;
+      margin-bottom: 20px;
+      //margin-top: 40px;
+    }
+
+    .description__main {
+      font: normal normal normal 16px/22px $font-main-opensans;
+      letter-spacing: 0;
+      color: $color-black;
+      width: 50%;
+    }
+
+    .button__cta {
+
+      @include btn {
+        @include desktop {
+          width: 440px;
+          height: 67px;
+          margin-top: 38px;
+        }
+        @include mobile {
+          width: 70%;
+          height: 60px;
+          margin-top: 38px;
+        }
+        @include tablet {
+          width: 70%;
+          height: 60px;
+          margin: 0 auto;
+        }
+      }
+    }
+    .background__main-page {
+      //position: relative;
+      width: 100vw;
+      overflow: hidden;
+      padding: 0;
+      margin: 0;
+    }
+    }
+  }

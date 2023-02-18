@@ -1,0 +1,92 @@
+
+@import 'Workshop/scss/settings/variables';
+@import 'Workshop/scss/settings/mixins';
+
+
+.statistics {
+  width: 100%;
+
+  .heading2 {
+    text-align: center;
+    font: normal normal normal 36px/42px $font-main-raleway;
+    letter-spacing: 0;
+    color: $color-black;
+    margin: 0 auto;
+    padding: 100px 0 100px 0;
+    @include tablet{
+      padding: 40px 0 40px 0;
+      width: 70%;
+      margin: 0 auto;
+    }
+    @include mobile{
+      padding: 10px 0 30px 0;
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
+
+  .statistics__contents {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 122px;
+    @include tablet{
+      flex-direction: column;
+    }
+    @include mobile{
+      flex-direction: column;
+    }
+    }
+  }
+
+.statistics__contents div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-left: 7%;
+  margin-right: 7%;
+
+  .statistics__icons-box {
+    background-color: red;
+    border-radius: 50%;
+    width: 63px;
+    height: 63px;
+
+    .statistics__icons {
+      display: flex;
+      position: relative;
+      left: 40%;
+    }
+  }
+  .statistics__numbers{
+    text-align: center;
+    font: normal normal 800 20px/24px Raleway;
+    letter-spacing: 5.96px;
+    color: #000000;
+    margin: 14px 0 19px 0;
+  }
+  .statistics__nr-description{
+    text-align: center;
+    font: normal normal normal 17px/20px Raleway;
+    letter-spacing: 0;
+    color: #A5A5A5;
+  }
+}
+
+  .statistics__contents div:nth-child(1) > div:first-child {
+    background-color: #FB3B64;
+  }
+
+  .statistics__contents div:nth-child(2) > div:first-child {
+    background-color: #08A6E4;
+  }
+
+  .statistics__contents div:nth-child(3) > div:first-child {
+    background-color: #55DFB4;
+  }
+
+
+
+
+

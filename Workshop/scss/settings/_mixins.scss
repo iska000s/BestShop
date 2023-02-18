@@ -1,0 +1,59 @@
+@import 'Workshop/scss/settings/variables';
+
+
+
+@mixin desktop {
+  @media (min-width: 1024px){
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media (min-width: 736px) and (max-width: 1024px) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media (max-width: 736px) {
+    @content;
+  }
+}
+
+@mixin btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $color-primary 0 0% no-repeat padding-box;
+  box-shadow: 5px 10px 14px $color-primary-shadow;
+  border-radius: 40px;
+  text-decoration: none;
+  font: normal normal bold 16px/22px $font-main-opensans;
+  color: $color-white;
+  @content;
+}
+
+@mixin h2-main{
+  text-align: center;
+  font: normal normal normal 36px/42px $font-main-raleway;
+  letter-spacing: 0;
+  color: $color-black;
+  margin: 100px 0 100px 0;
+  @content;
+}
+@mixin h3-main{
+  text-align: left;
+  font: normal normal bold 20px/1px $font-main-raleway;
+  letter-spacing: 0px;
+  color: #13253B;
+  line-height: 24px;
+  @content;
+}
+
+@mixin description-main-text{
+  font: normal normal normal 16px/22px $font-main-opensans;
+  letter-spacing: 0;
+  color: $color-black;
+  @content;
+}
+

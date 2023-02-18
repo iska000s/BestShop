@@ -1,0 +1,351 @@
+
+@import 'Workshop/scss/settings/variables';
+@import 'Workshop/scss/settings/mixins';
+
+
+.benefits__back{
+  padding: 100px 0 100px 0;
+  background: #F7F7F7 0% 0% no-repeat padding-box;
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @include tablet{
+    padding: 10px 0 10px 0;
+  }
+  @include mobile{
+  padding: 10px 0 10px 0;
+
+  }
+}
+
+.benefits{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.benefits__box{
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background: #FFFFFF 0 0% no-repeat padding-box;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  width: 90%;
+}
+
+.benefits__box h2{
+  @include h2-main;
+  margin: 0 0 30px 0;
+  text-align: left;
+  @include tablet{
+    font-size: 26px;
+  }
+  @include mobile{
+    font-size: 20px;
+  }
+}
+
+.description__main{
+  @include description-main-text;
+  @include tablet{
+    text-align: left;
+  }
+  @include mobile{
+    text-align: left;
+  }
+}
+
+/* 03 --- first benefit */
+
+.benefits__first{
+  padding-left: 35px;
+  padding-right: 71px;
+  justify-content: space-between;
+  @include tablet{
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+  @include mobile{
+    flex-direction: column-reverse;
+    padding: 0;
+  }
+}
+
+.benefits__first .benefits__text{
+  width: 39%;
+  position: relative;
+  padding-bottom: 50px;
+  @include tablet{
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+  }
+  @include mobile{
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@include desktop {
+  .benefits__first .benefits__text::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    flex-direction: row;
+    background: #FF0000 0% 0% no-repeat padding-box;
+    width: 75%;
+    height: 4px;
+    opacity: 1;
+  }
+}
+
+
+.benefits__first .benefits__img{
+  position: relative;
+  height: 294px;
+  width: 433px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+  margin: 38px 0 38px 0;
+  z-index: 100;
+  @include tablet{
+    width: 70%;
+    height: auto;
+    justify-content: center;
+    padding-top: 30px;
+  }
+  @include mobile{
+    height: auto;
+    justify-content: center;
+    width: 60%;
+    padding-top: 30px;
+  }
+  .benefits-img{
+    width: 386px;
+    @include tablet{
+      width: 80%;
+    }
+    @include mobile{
+      width: 80%;
+    }
+  }
+}
+
+.benefits__first .benefits__img::before{
+  content: "";
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: $color-redish 0% 0% no-repeat padding-box;
+  display: flex;
+  border-radius: 41px;
+  left: 50%;
+  bottom: 20%;
+  transform: rotate(45deg);
+  z-index: -100;
+  @include tablet{
+    width: 40%;
+    height: 60%;
+    left: 55%;
+    bottom: 30%;
+  }
+  @include mobile{
+    width: 40%;
+    height: 60%;
+  }
+}
+
+/* 03 --- second benefit */
+
+.benefits .benefits__box:nth-child(2){
+  margin: 37px 0 37px 0;
+}
+.benefits__second{
+  padding-left: 70px;
+  padding-right: 20px;
+  justify-content: space-between;
+  @include tablet{
+    flex-direction: column;
+    padding: 0;
+  }
+  @include mobile{
+    flex-direction: column;
+    padding: 0;
+
+  }
+}
+
+.benefits__second .benefits__text{
+  width: 39%;
+  position: relative;
+  padding-bottom: 50px;
+  @include tablet{
+    width: 70%;
+    text-align: center;
+    justify-content: center;
+  }
+  @include mobile{
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@include desktop {
+  .benefits__second .benefits__text::before {
+    content: "";
+    position: absolute;
+    top: 100%;
+    flex-direction: row;
+    background: $color-primary 0% 0% no-repeat padding-box;
+    width: 75%;
+    height: 4px;
+    opacity: 1;
+  }
+}
+
+.benefits__second .benefits__img img{
+  width: 426px;
+  @include tablet {
+    width: 80%;
+  }
+  @include mobile {
+    width: 90%;
+  }
+}
+
+.benefits__second .benefits__img{
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0 13px 0;
+  z-index: 100;
+  @include tablet{
+    width: 80%;
+    justify-content: center;
+  }
+  @include mobile{
+    justify-content: center;
+    width: 70%;
+  }
+}
+
+.benefits__second .benefits__img::before{
+  content: "";
+  position: absolute;
+  width: 320px;
+  height: 320px;
+  background: #07ACE6 0% 0% no-repeat padding-box;;
+  display: block;
+  border-radius: 50%;
+  right: 30%;
+  top: -10px;
+  z-index: -100;
+  @include mobile{
+    width: 70%;
+    height: 80%;
+  }
+}
+
+/* 03 --- third benefit */
+.benefits__third{
+  background: none;
+  border: none;
+  padding-left: 0;
+  justify-content: space-between;
+  height: 370px;
+  @include tablet{
+    flex-direction: column;
+  }
+  @include mobile{
+    flex-direction: column;
+  }
+}
+
+.benefits__third .benefits__text{
+  height: 100%;
+  width: 55%;
+  position: relative;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0 35px 0 35px;
+  @include tablet{
+    width: 100%;
+    padding: 50px 0 50px 0;
+  }
+  @include mobile{
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    padding: 50px 0 50px 0;
+
+  }
+  h2, p{
+    @include tablet{
+      width: 80%;
+      text-align: left;
+      height: auto;
+    }
+    @include mobile{
+      width: 70%;
+      text-align: left;
+      height: auto;
+    }
+  }
+
+}
+
+@include desktop {
+  .benefits__third .benefits__text::before {
+    content: "";
+    position: absolute;
+    top: 80%;
+    flex-direction: row;
+    background: $color-green 0 0% no-repeat padding-box;
+    width: 45%;
+    height: 4px;
+  }
+}
+.benefits__third .benefits__img img{
+  width: 295px;
+  @include mobile{
+    width: 70%;
+  }
+  @include tablet{
+    width: 60%;
+  }
+}
+
+.benefits__third .benefits__img{
+  height: 370px;
+  width: 440px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 100;
+  background: #55DFB4 0% 0% no-repeat padding-box;
+  border: 1px solid #E8E9ED;
+  border-radius: 5px;
+  margin: 0 0 0 60px;
+  @include tablet{
+    margin: 0 auto;
+    width: 100%;
+  }
+  @include mobile{
+    margin: 0 auto;
+    width: 100%;
+  }
+}

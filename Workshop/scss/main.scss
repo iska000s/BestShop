@@ -1,0 +1,29 @@
+@import 'settings/reset';
+@import 'settings/variables';
+
+@import 'sections/header';
+@import 'sections/main-p-sell';
+@import 'sections/main-p-statistics';
+@import 'sections/main-p-benefits';
+@import 'sections/main-p-pricing';
+@import 'sections/contact';
+
+*{
+  box-sizing: border-box;
+  margin: 0 auto;
+}
+
+
+.whole-back{
+  display: flex;
+  background-color: $color-white;
+  width: 100vw;
+}
+
+.container{
+  width: $container-width;
+  @media (max-width: 1352px) {
+    width: 100%;
+    padding: 0 15px 0 15px;
+  }
+}

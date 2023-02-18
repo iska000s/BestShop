@@ -1,0 +1,166 @@
+
+@import 'Workshop/scss/settings/variables';
+@import 'Workshop/scss/settings/mixins';
+
+
+.header{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: $color-white 0 0% no-repeat padding-box;
+  box-shadow: 0 3px 6px #00000029;
+  position: fixed;
+  z-index: 500;
+  @include tablet{
+    box-shadow: 0 2px 4px #00000029;
+  }
+  @include mobile{
+    box-shadow: 0 2px 4px #00000029;
+    width: 100%;
+  }
+
+  .header__blanket{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 70px;
+    .logo{
+      text-align: left;
+      font: normal normal 300 32px/37px $font-main-raleway;
+      color: $color-primary;
+      width: 50%;
+    }
+  }
+}
+
+.menu-desktop{
+  height: 100%;
+  display: flex;
+
+}
+.menu{
+  display: flex;
+  justify-content: space-around;
+  font: normal normal bold 11px/15px $font-main-opensans;
+  letter-spacing: 3.28px;
+  color: $color-grey;
+  text-transform: uppercase;
+  height: 100%;
+  @include mobile{
+    font: normal normal bold 9px/12px $font-main-opensans;
+  }
+
+  .menu__items{
+    display: flex;
+    align-items: center;
+    height: 100%;
+    cursor: pointer;
+    padding: 0 26px;
+    a {
+      text-decoration: none;
+      text-underline: none;
+      color: $color-grey;
+      height: 100%;
+      padding: 28px 18px 22px;
+    }
+  }
+}
+
+a:hover{
+  color: $color-black;
+  border-bottom: 4px solid $color-primary;
+  text-decoration: none;
+}
+
+.menu-desktop{
+  @include tablet{
+    display: none;
+  }
+  @include mobile{
+    display: none;
+  }
+}
+
+
+//HAMBURGER
+//NIE DZIAŁA TAK JAK POWINIEN!!!!!! DO POPRAWY!!!!
+
+
+
+
+
+.menu-mobile {
+  @include desktop {
+    display: none;
+  }
+
+  @include tablet {
+
+    .menu-mobile {
+      display: flex;
+    }
+    .nav-mobile-hamburger {
+      display: flex;
+
+    }
+    .menu-checked {
+      display: none;
+    }
+    input#menu-checkbox:checked {
+
+      ~ .menu {
+        display: flex;
+        flex-direction: column;
+        transform: translateY(60%) translateX(-10%);
+        width: 100%;
+        .menu__items {
+          display: flex;
+          background: white;
+          width: 100vw;
+        }
+      }
+      ~ .nav-mobile-hamburger {
+        position: absolute;
+        right: 0;
+        transition: left linear 0.05s;
+      }
+    }
+  }
+}
+
+
+
+
+@include mobile {
+
+  .menu-mobile {
+    display: flex;
+  }
+  .nav-mobile-hamburger {
+    display: flex;
+
+  }
+  .menu-checked {
+    display: none;
+  }
+  input#menu-checkbox:checked {
+
+    ~ .menu {
+      display: flex;
+      flex-direction: column;
+      transform: translateY(60%) translateX(-10%);
+      width: 100%;
+      .menu__items {
+        display: flex;
+        background: white;
+        width: 100vw;
+      }
+    }
+    ~ .nav-mobile-hamburger {
+      position: absolute;
+      right: 0;
+      transition: left linear 0.05s;
+    }
+  }
+}
