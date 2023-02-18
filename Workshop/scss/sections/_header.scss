@@ -26,10 +26,7 @@
     align-items: center;
     height: 70px;
     .logo{
-      text-align: left;
-      font: normal normal 300 32px/37px $font-main-raleway;
-      color: $color-primary;
-      width: 50%;
+     @include logo-main;
     }
   }
 }
@@ -117,7 +114,7 @@ a:hover{
         .menu__items {
           display: flex;
           background: white;
-          width: 100vw;
+          width: 100%;
         }
       }
       ~ .nav-mobile-hamburger {
@@ -154,7 +151,8 @@ a:hover{
       .menu__items {
         display: flex;
         background: white;
-        width: 100vw;
+        width: 100%;
+        flex-wrap: nowrap;
       }
     }
     ~ .nav-mobile-hamburger {

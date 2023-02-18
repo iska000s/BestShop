@@ -7,17 +7,19 @@
 @import 'sections/main-p-benefits';
 @import 'sections/main-p-pricing';
 @import 'sections/contact';
+@import 'sections/footer';
 
 *{
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-
+html{
+  width: 100%;
+}
 .whole-back{
-  display: flex;
   background-color: $color-white;
-  width: 100vw;
+  width: 100%;
 }
 
 .container{

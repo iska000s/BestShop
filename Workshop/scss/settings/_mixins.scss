@@ -20,6 +20,14 @@
   }
 }
 
+@mixin logo-main {
+  text-align: left;
+  font: normal normal 300 32px/37px $font-main-raleway;
+  color: $color-primary;
+  width: 50%;
+  @content
+}
+
 @mixin btn {
   display: flex;
   justify-content: center;

@@ -54,6 +54,9 @@
   @include h2-main;
   margin-bottom: 20px;
   margin-top: 100px;
+  @include mobile{
+    margin-top: 50px;
+  }
 }
 
 .heading3{
@@ -97,6 +100,7 @@
   text-decoration: none;
   width: 150px;
   height: 50px;
+  border: none;
 }
 
 /* 04 --- first frame - basic */
@@ -189,12 +193,14 @@
 .pricing__first-box .button__begin{
   position: absolute;
   transform: translateY(450%);
-  background: #EB476E 0% 0% no-repeat padding-box;
+  background: #EB476E;
   border-radius: 23px;
   text-align: left;
   font: normal normal bold 13px/41px $font-main-opensans;
   letter-spacing: 0px;
   color: $color-white;
+  border: none;
+
   @include mobile{
     transform: translateY(240%);
   }
@@ -207,11 +213,13 @@
   position: absolute;
   transform: translateY(500%);
   background: #07ACE6 0% 0% no-repeat padding-box;
-  box-shadow: 5px 10px 14px #07ACE629;
+  box-shadow: 3px 10px 14px $color-primary-shadow;
+  //border: 1px solid #07ACE6;
   border-radius: 23px;
   font: normal normal bold 13px/41px $font-main-opensans;
   letter-spacing: 0px;
   color: $color-white;
+  border: none;
   @include mobile{
     transform: translateY(240%);
   }
@@ -229,6 +237,7 @@
   font: normal normal bold 13px/41px $font-main-opensans;
   letter-spacing: 0px;
   color: $color-white;
+  border: none;
   @include mobile{
     transform: translateY(240%);
   }

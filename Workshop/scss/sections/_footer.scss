@@ -1,0 +1,66 @@
+
+@import 'Workshop/scss/settings/variables';
+@import 'Workshop/scss/settings/mixins';
+
+
+
+.footer-box{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background: $color-white 0% 0% no-repeat padding-box;
+  box-shadow: 0px -5px 46px #00000029;
+}
+
+.footer-blanket{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+  @include mobile{
+    justify-content: center;
+    gap: 150px;
+  }
+  @include tablet{
+    justify-content: center;
+    gap: 200px;
+  }
+}
+
+.footer-blanket .logo{
+  @include logo-main;
+  margin-left: 20px;
+  text-align: left;
+  font: normal normal 300 26px/30px $font-main-raleway;
+}
+
+.copyright{
+  margin-left: 20px;
+  text-align: left;
+  font: normal normal normal 11px/15px Open Sans;
+  letter-spacing: 0px;
+  color: #A5A5A5;
+}
+
+.twitter::before{
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-image: url("../img/Twitter.svg");
+  border: none;
+  background-repeat: no-repeat;
+  transform: translateX(-300%);
+}
+
+.facebook::before{
+  content: "";
+  position: absolute;
+  height: 24px;
+  width: 24px;
+  background-image: url("../img/Facebook.svg");
+  border: none;
+  background-repeat: no-repeat;
+  margin-left: -130px;
+}
