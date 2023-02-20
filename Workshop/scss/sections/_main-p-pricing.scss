@@ -1,15 +1,14 @@
-
 @import 'Workshop/scss/settings/variables';
 @import 'Workshop/scss/settings/mixins';
 
 
-.pricing{
+.pricing {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   width: 100%;
-  @include tablet{
+  @include tablet {
     margin-top: 100px;
   }
   @include mobile {
@@ -17,54 +16,54 @@
   }
 }
 
-.pricing__boxes{
+.pricing__boxes {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   width: 100%;
-  @include tablet{
+  @include tablet {
     flex-direction: column;
     gap: 40px;
 
   }
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     gap: 50px;
 
   }
 }
 
-.pricing__box{
+.pricing__box {
   display: flex;
   justify-content: center;
   height: 460px;
   flex-direction: column;
   align-items: center;
   width: 30%;
-  @include tablet{
+  @include tablet {
     flex-direction: row;
   }
-  @include mobile{
+  @include mobile {
     flex-direction: row;
   }
 }
 
-.pricing .heading2{
+.pricing .heading2 {
   @include h2-main;
   margin-bottom: 20px;
   margin-top: 100px;
-  @include mobile{
+  @include mobile {
     margin-top: 50px;
   }
 }
 
-.heading3{
+.heading3 {
   @include h3-main;
   margin-bottom: 14px;
 }
 
-.count__details{
+.count__details {
   text-align: center;
   font: normal normal normal 14px/41px $font-main-opensans;
   letter-spacing: 0px;
@@ -83,7 +82,7 @@
   }
 }
 
-.limited{
+.limited {
   text-align: left;
   font: normal normal bold 12px/1px $font-main-raleway;
   letter-spacing: 0px;
@@ -91,7 +90,7 @@
   line-height: 14px;
 }
 
-.button__begin{
+.button__begin {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -105,7 +104,7 @@
 
 /* 04 --- first frame - basic */
 
-.pricing__first-box .count{
+.pricing__first-box .count {
   text-align: left;
   font: normal normal 300 46px/2px $font-main-opensans;
   letter-spacing: 0px;
@@ -115,15 +114,15 @@
 
 }
 
-.pricing__first-box{
+.pricing__first-box {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #FB3B64;
   border-radius: 18px;
-  @include tablet{
+  @include tablet {
     width: 60%;
     height: 50%;
   }
-  @include mobile{
+  @include mobile {
     width: 70%;
     height: 50%;
 
@@ -133,11 +132,11 @@
 /* 04 --- second frame - proffesional*/
 
 
-.pricing__second-box{
+.pricing__second-box {
   margin: 0 59px 0 59px;
 }
 
-.pricing__second-box .count{
+.pricing__second-box .count {
   text-align: left;
   font: normal normal 300 46px/2px $font-main-opensans;
   letter-spacing: 0px;
@@ -146,18 +145,18 @@
   margin-bottom: 5px;
 }
 
-.pricing__second-box{
+.pricing__second-box {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   box-shadow: 5px 10px 27px #07ACE629;
   border: 1px solid #07ACE6;
   border-radius: 18px;
   width: 35%;
   height: 500px;
-  @include tablet{
+  @include tablet {
     width: 70%;
     height: 40%;
   }
-  @include mobile{
+  @include mobile {
     width: 90%;
     height: 40%;
 
@@ -166,7 +165,7 @@
 
 /* 04 --- third frame - premium*/
 
-.pricing__third-box .count{
+.pricing__third-box .count {
   text-align: left;
   font: normal normal 300 46px/2px $font-main-opensans;
   letter-spacing: 0px;
@@ -175,22 +174,22 @@
   margin-bottom: 5px;
 }
 
-.pricing__third-box{
+.pricing__third-box {
   background: #FFFFFF 0% 0% no-repeat padding-box;
   border: 1px solid #55DFB4;
   border-radius: 18px;
-  @include tablet{
+  @include tablet {
     width: 60%;
     height: 40%;
   }
-  @include mobile{
+  @include mobile {
     width: 70%;
     height: 40%;
 
   }
 }
 
-.pricing__first-box .button__begin{
+.pricing__first-box .button__begin {
   position: absolute;
   transform: translateY(450%);
   background: #EB476E;
@@ -201,15 +200,15 @@
   color: $color-white;
   border: none;
 
-  @include mobile{
+  @include mobile {
     transform: translateY(240%);
   }
-  @include tablet{
+  @include tablet {
     transform: translateY(240%);
   }
 }
 
-.pricing__second-box .button__begin{
+.pricing__second-box .button__begin {
   position: absolute;
   transform: translateY(500%);
   background: #07ACE6 0% 0% no-repeat padding-box;
@@ -220,15 +219,15 @@
   letter-spacing: 0px;
   color: $color-white;
   border: none;
-  @include mobile{
+  @include mobile {
     transform: translateY(240%);
   }
-  @include tablet{
+  @include tablet {
     transform: translateY(240%);
   }
 }
 
-.pricing__third-box .button__begin{
+.pricing__third-box .button__begin {
   position: absolute;
   transform: translateY(450%);
   background: #55DFB4 0% 0% no-repeat padding-box;
@@ -238,15 +237,15 @@
   letter-spacing: 0px;
   color: $color-white;
   border: none;
-  @include mobile{
+  @include mobile {
     transform: translateY(240%);
   }
-  @include tablet{
+  @include tablet {
     transform: translateY(240%);
   }
 }
 
-.pricing__header{
+.pricing__header {
   @include tablet {
     width: 50%;
     margin-right: 5px;
@@ -261,13 +260,13 @@
 /* 04 --- checkmarks */
 /* 04 --- first frame - basic*/
 
-.count__details span{
+.count__details span {
   position: relative;
 }
 
 .pricing__first-box .count__details span:first-child:before,
 .pricing__first-box .count__details span:nth-child(2):before,
-.pricing__first-box .count__details span:nth-child(3):before{
+.pricing__first-box .count__details span:nth-child(3):before {
   content: "";
   position: absolute;
   height: 15px;
@@ -278,7 +277,7 @@
 }
 
 .pricing__first-box .count__details span:nth-child(4):before,
-.pricing__first-box .count__details span:nth-child(5):before{
+.pricing__first-box .count__details span:nth-child(5):before {
   content: "";
   position: absolute;
   height: 15px;
@@ -294,7 +293,7 @@
 .pricing__second-box .count__details span:nth-child(1):before,
 .pricing__second-box .count__details span:nth-child(2):before,
 .pricing__second-box .count__details span:nth-child(3):before,
-.pricing__second-box .count__details span:nth-child(4):before{
+.pricing__second-box .count__details span:nth-child(4):before {
   content: "";
   position: absolute;
   height: 15px;
@@ -304,7 +303,7 @@
   transform: translateX(-150%) translateY(100%);
 }
 
-.pricing__second-box .count__details span:nth-child(5):before{
+.pricing__second-box .count__details span:nth-child(5):before {
   content: "";
   position: absolute;
   height: 15px;
@@ -317,7 +316,7 @@
 /* 04 --- checkmark */
 /* 04 --- third frame - premium */
 
-.pricing__third-box .count__details span::before{
+.pricing__third-box .count__details span::before {
   content: "";
   position: absolute;
   height: 15px;

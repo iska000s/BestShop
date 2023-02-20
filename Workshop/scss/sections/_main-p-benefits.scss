@@ -1,9 +1,8 @@
-
 @import 'Workshop/scss/settings/variables';
 @import 'Workshop/scss/settings/mixins';
 
 
-.benefits__back{
+.benefits__back {
   padding: 100px 0 100px 0;
   background: #F7F7F7 0% 0% no-repeat padding-box;
   width: 100%;
@@ -11,23 +10,23 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  @include tablet{
+  @include tablet {
     padding: 10px 0 10px 0;
   }
-  @include mobile{
-  padding: 10px 0 10px 0;
+  @include mobile {
+    padding: 10px 0 10px 0;
 
   }
 }
 
-.benefits{
+.benefits {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.benefits__box{
+.benefits__box {
   display: flex;
   align-items: center;
   flex-direction: row;
@@ -37,54 +36,54 @@
   width: 90%;
 }
 
-.benefits__box h2{
+.benefits__box h2 {
   @include h2-main;
   margin: 0 0 30px 0;
   text-align: left;
-  @include tablet{
+  @include tablet {
     font-size: 26px;
   }
-  @include mobile{
+  @include mobile {
     font-size: 20px;
   }
 }
 
-.description__main{
+.description__main {
   @include description-main-text;
-  @include tablet{
+  @include tablet {
     text-align: left;
   }
-  @include mobile{
+  @include mobile {
     text-align: left;
   }
 }
 
 /* 03 --- first benefit */
 
-.benefits__first{
+.benefits__first {
   padding-left: 35px;
   padding-right: 71px;
   justify-content: space-between;
-  @include tablet{
+  @include tablet {
     flex-direction: column-reverse;
     padding: 0;
   }
-  @include mobile{
+  @include mobile {
     flex-direction: column-reverse;
     padding: 0;
   }
 }
 
-.benefits__first .benefits__text{
+.benefits__first .benefits__text {
   width: 39%;
   position: relative;
   padding-bottom: 50px;
-  @include tablet{
+  @include tablet {
     width: 70%;
     text-align: center;
     justify-content: center;
   }
-  @include mobile{
+  @include mobile {
     width: 60%;
     text-align: center;
     justify-content: center;
@@ -105,7 +104,7 @@
 }
 
 
-.benefits__first .benefits__img{
+.benefits__first .benefits__img {
   position: relative;
   height: 294px;
   width: 433px;
@@ -114,30 +113,31 @@
   justify-content: flex-start;
   margin: 38px 0 38px 0;
   z-index: 100;
-  @include tablet{
+  @include tablet {
     width: 70%;
     height: auto;
     justify-content: center;
     padding-top: 30px;
   }
-  @include mobile{
+  @include mobile {
     height: auto;
     justify-content: center;
     width: 60%;
     padding-top: 30px;
   }
-  .benefits-img{
+
+  .benefits-img {
     width: 386px;
-    @include tablet{
+    @include tablet {
       width: 80%;
     }
-    @include mobile{
+    @include mobile {
       width: 80%;
     }
   }
 }
 
-.benefits__first .benefits__img::before{
+.benefits__first .benefits__img::before {
   content: "";
   position: absolute;
   width: 180px;
@@ -149,13 +149,13 @@
   bottom: 20%;
   transform: rotate(45deg);
   z-index: -100;
-  @include tablet{
+  @include tablet {
     width: 40%;
     height: 60%;
     left: 55%;
     bottom: 30%;
   }
-  @include mobile{
+  @include mobile {
     width: 40%;
     height: 60%;
   }
@@ -163,34 +163,35 @@
 
 /* 03 --- second benefit */
 
-.benefits .benefits__box:nth-child(2){
+.benefits .benefits__box:nth-child(2) {
   margin: 37px 0 37px 0;
 }
-.benefits__second{
+
+.benefits__second {
   padding-left: 70px;
   padding-right: 20px;
   justify-content: space-between;
-  @include tablet{
+  @include tablet {
     flex-direction: column;
     padding: 0;
   }
-  @include mobile{
+  @include mobile {
     flex-direction: column;
     padding: 0;
 
   }
 }
 
-.benefits__second .benefits__text{
+.benefits__second .benefits__text {
   width: 39%;
   position: relative;
   padding-bottom: 50px;
-  @include tablet{
+  @include tablet {
     width: 70%;
     text-align: center;
     justify-content: center;
   }
-  @include mobile{
+  @include mobile {
     width: 60%;
     text-align: center;
     justify-content: center;
@@ -210,7 +211,7 @@
   }
 }
 
-.benefits__second .benefits__img img{
+.benefits__second .benefits__img img {
   width: 426px;
   @include tablet {
     width: 80%;
@@ -220,24 +221,24 @@
   }
 }
 
-.benefits__second .benefits__img{
+.benefits__second .benefits__img {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
   margin: 20px 0 13px 0;
   z-index: 100;
-  @include tablet{
+  @include tablet {
     width: 80%;
     justify-content: center;
   }
-  @include mobile{
+  @include mobile {
     justify-content: center;
     width: 70%;
   }
 }
 
-.benefits__second .benefits__img::before{
+.benefits__second .benefits__img::before {
   content: "";
   position: absolute;
   width: 320px;
@@ -248,28 +249,28 @@
   right: 30%;
   top: -10px;
   z-index: -100;
-  @include mobile{
+  @include mobile {
     width: 70%;
     height: 80%;
   }
 }
 
 /* 03 --- third benefit */
-.benefits__third{
+.benefits__third {
   background: none;
   border: none;
   padding-left: 0;
   justify-content: space-between;
   height: 370px;
-  @include tablet{
+  @include tablet {
     flex-direction: column;
   }
-  @include mobile{
+  @include mobile {
     flex-direction: column;
   }
 }
 
-.benefits__third .benefits__text{
+.benefits__third .benefits__text {
   height: 100%;
   width: 55%;
   position: relative;
@@ -281,13 +282,13 @@
   align-items: start;
   flex-direction: column;
   padding: 0 35px 0 35px;
-  @include tablet{
+  @include tablet {
     width: 100%;
     padding: 50px 0 50px 0;
     align-items: center;
 
   }
-  @include mobile{
+  @include mobile {
     width: 100%;
     padding: 50px 0 50px 0;
     text-align: center;
@@ -296,13 +297,14 @@
 
 
   }
-  h2, p{
-    @include tablet{
+
+  h2, p {
+    @include tablet {
       width: 70%;
       text-align: left;
       height: auto;
     }
-    @include mobile{
+    @include mobile {
       width: 70%;
       text-align: left;
       height: auto;
@@ -322,18 +324,19 @@
     height: 4px;
   }
 }
-.benefits__third .benefits__img img{
+
+.benefits__third .benefits__img img {
   align-self: center;
   width: 295px;
-  @include mobile{
+  @include mobile {
     width: 60%;
   }
-  @include tablet{
+  @include tablet {
     width: 60%;
   }
 }
 
-.benefits__third .benefits__img{
+.benefits__third .benefits__img {
   height: 370px;
   width: 440px;
   display: flex;
@@ -345,12 +348,12 @@
   border: 1px solid #E8E9ED;
   border-radius: 5px;
   margin: 0 0 0 60px;
-  @include tablet{
+  @include tablet {
     margin: 0 auto;
     width: 100%;
     max-height: 300px;
   }
-  @include mobile{
+  @include mobile {
     margin: 0 auto;
     width: 100%;
     max-height: 250px;

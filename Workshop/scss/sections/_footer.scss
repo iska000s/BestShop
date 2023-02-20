@@ -1,10 +1,8 @@
-
 @import 'Workshop/scss/settings/variables';
 @import 'Workshop/scss/settings/mixins';
 
 
-
-.footer-box{
+.footer-box {
   width: 100%;
   display: flex;
   justify-content: center;
@@ -12,30 +10,30 @@
   box-shadow: 0px -5px 46px #00000029;
 }
 
-.footer-blanket{
+.footer-blanket {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   height: 80px;
-  @include mobile{
+  @include mobile {
     justify-content: center;
     gap: 150px;
   }
-  @include tablet{
+  @include tablet {
     justify-content: center;
     gap: 200px;
   }
 }
 
-.footer-blanket .logo{
+.footer-blanket .logo {
   @include logo-main;
   margin-left: 20px;
   text-align: left;
   font: normal normal 300 26px/30px $font-main-raleway;
 }
 
-.copyright{
+.copyright {
   margin-left: 20px;
   text-align: left;
   font: normal normal normal 11px/15px Open Sans;
@@ -43,7 +41,7 @@
   color: #A5A5A5;
 }
 
-.twitter::before{
+.twitter::before {
   content: "";
   position: absolute;
   height: 24px;
@@ -54,7 +52,7 @@
   transform: translateX(-300%);
 }
 
-.facebook::before{
+.facebook::before {
   content: "";
   position: absolute;
   height: 24px;

@@ -9,20 +9,21 @@
 @import 'sections/contact';
 @import 'sections/footer';
 
-*{
+* {
   box-sizing: border-box;
   margin: 0 auto;
 }
 
-html{
+html {
   width: 100%;
 }
-.whole-back{
+
+.whole-back {
   background-color: $color-white;
   width: 100%;
 }
 
-.container{
+.container {
   width: $container-width;
   @media (max-width: 1352px) {
     width: 100%;
